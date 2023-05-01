@@ -11,16 +11,12 @@
                   <input class="clr-theme__input visually-hidden" type="checkbox" id="clr-theme-btn">
                   <label class="clr-theme__label" for="clr-theme-btn"></label>
                </div>
-               <h1 class="app__title">Задачі</h1>
+               <h1 class="app__title">Створити задачу</h1>
                <form action="#" class="app__add add-app">
                   <div class="add-app__item add-app__item_name">
                      <label class="add-app__label" for="task-name">Назва:</label>
                      <input class="add-app__input add-app__input_name" autocomplete="off" type="text" id="task-name" placeholder="Вкажіть назву" required data-required aria-required>
-                     <button class="add-app__button" type="submit" aria-label="Додати завдання">
-                        <svg class='icon-add'>
-                           <use href='./sprites/sprite.svg#icon-add'></use>
-                        </svg>
-                     </button>
+
                   </div>
                   <div class="add-app__item">
                      <label class="add-app__label add-app__label_desc" for="task-desc">Короткий опис:</label>
@@ -42,8 +38,14 @@
                      </div>
                   </div>
                   <div class="_files-container"></div>
+                  <button class="add-app__button" type="submit" aria-label="Додати завдання">
+                     <svg class='icon-add'>
+                        <use href='./sprites/sprite.svg#icon-add'></use>
+                     </svg>
+                  </button>
                </form>
                <div class="app__body">
+                  <h2 class="app__title app__title_list">Список задач</h2>
                   <ul class="app__list">
 
                   </ul>
@@ -51,9 +53,10 @@
             </div>
             <div class="app__footer">
                <button class="app__check-all" type="button">Відмітити всі</button>
-               <button class="app__remove" type="button">Очистити</button>
+               <button class="app__remove" type="button">Видалити всі</button>
             </div>
          </div>
+         <p class="created-by">'TODO list' v1.1 Dmitry <span>.</span>Conquer</p>
       </div>
       @@include('components-html/modal.html')
    </main>
