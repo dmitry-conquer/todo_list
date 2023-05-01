@@ -95,3 +95,11 @@
       }
    }
 }
+.modal-greeting {
+   &__main {
+      p {
+         text-align: center;
+         line-height: 1.3;
+      }
+   }
+}
