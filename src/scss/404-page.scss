@@ -1,0 +1,48 @@
+.error-page {
+   &__container {
+      max-width: 700px;
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+   }
+   &__title {
+      @include av("font-size", 150, 30);
+      margin-bottom: em(30, 150);
+      font-weight: 700;
+   }
+
+   &__sub-title {
+      @include av("font-size", 45, 24);
+      margin-bottom: em(15, 45);
+      font-weight: 500;
+   }
+
+   &__text {
+      @include av("font-size", 30, 20);
+
+      margin-bottom: em(30, 30);
+      text-align: center;
+   }
+
+   &__button {
+      border-radius: 10px;
+      padding: 20px 40px;
+      font-weight: 500;
+      background-color: #2ee3ee;
+      transition: all 0.3s ease 0s;
+      &:active {
+         transform: translateY(2px);
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            color: #fff;
+            background-color: #244e32;
+         }
+      }
+   }
+}

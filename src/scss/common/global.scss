@@ -1,0 +1,141 @@
+
+// > === General styles ===
+body {
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+
+   &._lock {
+      overflow: hidden;
+      touch-action: none;
+   }
+}
+
+// > === Main container styles ===
+[class*="__container"] {
+   margin: 0 auto;
+   padding: 0 $container-padding + px;
+   max-width: $container-max-width + px;
+}
+
+// > === One side container ===
+.left-container {
+   margin: 0;
+   padding: 0 0 0 calc((100% - ($container-max-width * 1px)) / 2 + $container-padding * 1px);
+   max-width: none;
+}
+
+.right-container {
+   margin: 0;
+   padding: 0 calc((100% - ($container-max-width * 1px)) / 2 + $container-padding * 1px) 0 0;
+   max-width: none;
+}
+
+// > === Responsive images ===
+._imw {
+   img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+._ibg {
+   position: relative;
+
+   img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.visually-hidden {
+   @include visually-hidden;
+}
+
+.button-wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+// >> - - - - - - - - - - - - - [current project global styles] - - - - - - - - - - - - - - - - -
+
+// - - - - - - - [headlines] - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+// - - - - - - - [buttons] - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+// - - - - - - - [sprites] - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+/*
+.icon-example {
+  width: 40px;
+  height: 40px;
+  fill: none;
+  use {
+    --social-fill-path: white;
+    --social-stroke-circle: white;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      use {
+        --social-fill-path: skyblue;
+        --social-stroke-circle: skyblue;
+      }
+    }
+  }
+}
+*/
+
+/*
+.icon-eye-open {
+   display: block;
+   width: 20px;
+   height: 20px;
+   fill: #333;
+   stroke: none;
+   pointer-events: none;
+}
+
+.icon-eye-closed {
+   display: block;
+   width: 20px;
+   height: 20px;
+   fill: #333;
+   stroke: none;
+   pointer-events: none;
+}
+*/
+
+
+// - - - - - - - [header items animation] - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+/*
+@media (max-width: ($xl)) {
+   ._menu-header {
+      & li {
+         &._anim-menu-item {
+            transform: translateX(50px);
+            opacity: 0;
+            animation: anim-items 0.8s cubic-bezier(0.15, 0.97, 0.24, 1.01) calc(var(--i) * 0.2s) forwards;
+         }
+      }
+   }
+}
+@keyframes anim-items {
+   0% {
+      transform: translateX(50px);
+      opacity: 0;
+   }
+   100% {
+      transform: translateX(0);
+      opacity: 1;
+   }
+}
+*/

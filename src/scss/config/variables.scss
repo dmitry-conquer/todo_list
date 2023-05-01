@@ -1,0 +1,16 @@
+$container-layout-width: 1200; // Ширина контейнера по макету
+$container-padding: 15; // Отступы у контейнера (по 15px слева и справа, 0 = нет отступа)
+
+// Ширина контейнера + padding (0 = нет ограничения)
+$container-max-width: calc($container-layout-width + ($container-padding * 2));
+
+//break-points
+$xl: 1199.98px;
+$lg: 991.98px;
+$md: 767.98px;
+$sm: 575.98px;
+
+
+
+$button-light: #2B2D37;
+$input-border-light: #EBEBEB;
