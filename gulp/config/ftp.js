@@ -1,7 +1,7 @@
 // FTP settings
 export const configFTP = {
-  host: "rudy.zzz.com.ua", // FTP adress
-  user: "dmitryconquer", // login
-  password: "UzeraF55", // password
+  host: "www.www", // FTP adress
+  user: "www", // login
+  password: "www", // password
   parallel: 5, // number of concurrent threads
 };
